@@ -1,9 +1,28 @@
+.row-spacing {
+  margin-top: 1em;
+}
+
+.appheading {
+  height: 25vh;
+  background-color: black;
+  color: white;
+}
+
+.appheading h1 {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
 .grid-letter {
   border: black solid 1px;
   width: 30px;
   height: 30px;
   font-size: 20px;
   background-color: white;
+}
+
+.found {
+  background-color: #ffb380;
 }
 
 .grid-row {

@@ -2,69 +2,49 @@ import React, { Component } from 'react';
 import './bootstrap/bootstrap.min.css';
 import './App.css';
 
-import GridLetter from './components/gridletter';
+import LoadGrid from './components/LoadGrid';
+import WordSearch from './components/WordSearch';
 
 class App extends Component {
   constructor() {
     super();
-    this.state ={
-      grid: []
-    }
-  }
-
-  componentDidMount() {
-    this._loadGrid();
+    this._getSearchString = this._getSearchString.bind(this);
+    this.state = {
+      search: '',
+    } 
   }
 
   render() {
-    const searchGrid = this._buildSearchGrid();
+    
+    const appBody = this._loadAppBody();
     
     return (
-      <div className="container">
-        <div className="row">
-          <div className="col">
-            <h1 className="text-center">Hello World</h1>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-md justify-content-center d-flex">
-            <div className='grid-frame'>
-              {searchGrid}
+      <div>
+        <div className="container-fluid appheading d-flex flex-column justify-content-center">
+          <div className="row">
+            <div className="col">
+              <h1 className="text-center display-1">Word Search</h1>
+              <h1 className="text-center">I hate word searches!</h1>
             </div>
           </div>
-          <div className="col-md">
-          </div>
         </div>
+        {appBody}
       </div>
     );
   }
 
-  _buildSearchGrid() {
-    let rows = [];
-    this.state.grid.forEach((row, i) => {
-      rows.push(<div className='grid-row' key={i}>{this._buildGridRow(row)}</div>);
-    })
-    return rows;
-
-  }
-
-  _buildGridRow(gridRow) {
-    let row = [];
-    for(let i=0; i < gridRow.length; i++) {
-      row.push(<GridLetter letter={gridRow[i]} key={i} />);
+  _loadAppBody() {
+    if (this.state.search === '') {
+      return <LoadGrid returnStrig={this._getSearchString}/>
+    } else {
+      return <WordSearch textString={this.state.search} />
     }
-    return row;
   }
 
-  _loadGrid() {
-    let text = `MMMMMMMMMM\nDDDDDDDDDD\nEEEEEEEEEE\nFFFFFFFFFF\nMMMMMMMMMM\nMMMMMMMMMM\nMMMMMMMMMM\nMMMMMMMMMM\nMMMMMMMMMM\nMMMMMMMMMM\n`;
-    let rows = text.match(/([a-zA-Z]+)/g);
-    let grid = [];
-    rows.forEach((row) => {
-      grid.push(row.split(''));
-    })
-    this.setState({grid: grid});
+  _getSearchString (searchString) {
+    this.setState({search: searchString});
   }
+
 }
 
 export default App;
