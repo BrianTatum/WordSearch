@@ -15,7 +15,7 @@ export default class LoadGrid extends Component {
 		return (
 			<div className="container" >
 				<div className="row row-spacing justify-content-center">
-					<div className="col-6">
+					<div className="col col-sm-10 col-md-8 col-lg-6">
 						<form onSubmit={this._handleSubmit}>
 							<div className="form-group">
 								<label htmlFor="textArea" className='h4'>Enter letters for search grid.</label>

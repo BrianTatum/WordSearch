@@ -36,3 +36,17 @@
   padding: 3px;
   background-color: gray;
 }
+
+.word-found {
+  color: #155724;
+  background-color: #d4edda;
+}
+
+.word-not-found {
+  color: #721c24;
+  background-color: #f8d7da;
+}
+
+#searchWord{
+  margin-bottom: 5px;
+}

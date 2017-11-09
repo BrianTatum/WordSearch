@@ -9,6 +9,7 @@ class App extends Component {
   constructor() {
     super();
     this._getSearchString = this._getSearchString.bind(this);
+    this._clearSearchGrid = this._clearSearchGrid.bind(this);
     this.state = {
       search: '',
     } 
@@ -37,12 +38,16 @@ class App extends Component {
     if (this.state.search === '') {
       return <LoadGrid returnStrig={this._getSearchString}/>
     } else {
-      return <WordSearch textString={this.state.search} />
+      return <WordSearch textString={this.state.search} clearGrid={this._clearSearchGrid} />
     }
   }
 
   _getSearchString (searchString) {
     this.setState({search: searchString});
+  }
+
+  _clearSearchGrid() {
+    this.setState({search: ''});
   }
 
 }
