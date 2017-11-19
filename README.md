@@ -3,37 +3,37 @@ This React app takes at Word Search grid and then checkes to see if the entered 
 <a href='https://briantatum.github.io/WordSearch/'>Open App!</a>
 
 <strong>Copy the letters into the text area of the app.</strong>
-KERTRATSRDCBRK
-DTAESELLECANDO
-RRSOGITCCEENPK
-AAIGNEREFNNLVN
-CNIATPACRTTWKA
-ISDCTIKIRKEOLV
-PPRODDENBERRYO
-AOPVCNRBOAPMRY
-RRROMULANRRHRA
-ATNNKUNJCCIOAG
-CEENMSEOKHSLFE
-HRBORGIRYEEENR
-OERPTSKSNRENIE
-NIRAREEPPRDENR
+KERTRATSRDCBRK<br>
+DTAESELLECANDO<br>
+RRSOGITCCEENPK<br>
+AAIGNEREFNNLVN<br>
+CNIATPACRTTWKA<br>
+ISDCTIKIRKEOLV<br>
+PPRODDENBERRYO<br>
+AOPVCNRBOAPMRY<br>
+RRROMULANRRHRA<br>
+ATNNKUNJCCIOAG<br>
+CEENMSEOKHSLFE<br>
+HRBORGIRYEEENR<br>
+OERPTSKSNRENIE<br>
+NIRAREEPPRDENR<br>
 
 <strong>Search for these words:</strong>
-Star Trek
-Kirk
-Pecard
-Captain
-Roddenberry
-Enterprise
-Voyager
-Sisko
-Transporter
-Nacelles
-Romulan
-Bajor
-Wormhole
-Ferengi
-Borg
+Star Trek;
+Kirk;
+Pecard;
+Captain;
+Roddenberry;
+Enterprise;
+Voyager;
+Sisko;
+Transporter;
+Nacelles;
+Romulan;
+Bajor;
+Wormhole;
+Ferengi;
+Borg;
 Archer
 
 
