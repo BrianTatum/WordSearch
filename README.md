@@ -2,7 +2,7 @@ This React app takes at Word Search grid and then checkes to see if the entered 
 
 <a href='https://briantatum.github.io/WordSearch/'>Open App!</a>
 
-<strong>Copy the letters into the text area of the app.</strong>
+<strong>Copy the letters into the text area of the app.</strong><br>
 KERTRATSRDCBRK<br>
 DTAESELLECANDO<br>
 RRSOGITCCEENPK<br>
