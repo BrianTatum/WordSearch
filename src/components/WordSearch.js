@@ -69,7 +69,7 @@ export default class WordSerch extends Component {
   }
 
   _loadGrid() {
-    let text = this.props.textString;
+    let text = this.props.textString.toUpperCase();
     let rows = text.match(/([a-zA-Z]+)/g);
     let grid = [];
     rows.forEach((row) => {
